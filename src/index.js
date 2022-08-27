@@ -13,6 +13,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use("/api/empleados", require("./routers/empleado"));
 app.use("/api/departamentos", require("./routers/departamento"));
 
-app.listen(process.env.PORT, () => {
-  console.log(`iniciando servidor ${process.env.PORT}`);
+app.listen(1234, () => {
+  console.log('servidor iniciado en el puerto 1234');
 });

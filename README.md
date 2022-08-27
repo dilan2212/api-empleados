@@ -2,7 +2,6 @@ api-empleado
 
 tenemos que configurar nuestrar variables de entorno que son importantes para nuestra conexion a la base de datos (colocar la de su conexion de base de datos)
 
-PORT=1234
 HOST=localhost
 USER=postgres
 PASSWORD=postgres                
