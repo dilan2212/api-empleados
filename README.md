@@ -9,7 +9,7 @@ DATABASE=prueba
 PORTBASE=5432
 
 
-hay un scrip sql donde se encuentra la creacion de las tablas empleado y departamento, que se usaron para esta prueba (src/database/database.sql)
+hay un script sql donde se encuentra la creacion de las tablas empleado y departamento, que se usaron para esta prueba (src/database/database.sql)
 
 
 
@@ -108,6 +108,18 @@ http://localhost:1234/api/empleados/101
 se debe enviar un parametro al final de la url como en este caso es el 101, el cual es el codigo del empleado
 
 
+para ejecutar el docker nos ubicamos en la carpeta principal
+
+ejecutamos el comando
+
+docker build -t api-empleados .
+
+luego de generar la imagen ejecutamos el docker compose
+
+docker-compose up -d
+
+
+tener en cuenta que debe generar los script src/database/database.sql para poder usar la api
 
 
 

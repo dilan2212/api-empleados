@@ -1,0 +1,23 @@
+version: '3.0'
+services:
+  postgres:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: prueba
+    ports:
+      - '5432:5432'
+  api-empleados:
+    user: root
+    image: api-empleados
+    restart: always
+    ports:
+      - '1234:1234'
+    environment:
+      HOST: postgres
+      USER: postgres
+      PASSWORD: postgres              
+      DATABASE: prueba
+      PORTBASE: 5432
