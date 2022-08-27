@@ -1,5 +1,8 @@
 api-empleado
 
+luego de descargar la carpeta, abrir una terminar en la carpeta y colocar el siguiente comando
+ "npm install"
+
 tenemos que configurar nuestrar variables de entorno que son importantes para nuestra conexion a la base de datos (colocar la de su conexion de base de datos)
 
 HOST=localhost
